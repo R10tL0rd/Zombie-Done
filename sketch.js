@@ -77,11 +77,11 @@ function draw() {
       gameState = "end";
     }
 
-    if(keyDown("UP_ARROW") || touches.length>0){
+    if(keyDown("UP_ARROW")){
       shooter.y = shooter.y - 30;
     }
 
-    if(keyDown("DOWN_ARROW") || touches.length>0){
+    if(keyDown("DOWN_ARROW")){
       shooter.y = shooter.y + 30;
     }
 
@@ -96,7 +96,7 @@ function draw() {
       shooter.depth = bullet.depth;
       shooter.depth = shooter.depth + 2;
     }
-      else if(keyWentUp("SPACE") || touches.length>0){
+      else if(keyWentUp("SPACE")){
       shooter.addImage(shooter2Image);
     }
   
